@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Blitz</title>
+    <style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+    }
+
+    canvas {
+        border: 1px solid #fff;
+    }
+    </style>
+</head>
+<body>
+    <canvas id="galacticBlitzCanvas" width="800" height="800"></canvas>
+    <button onclick="viewHighScores()">View High Scores</button>
+
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop>
+    <source src="./Assets/Audio/Music/Space Oddity (8-Bits).mp3" type="audio/mp3">
+</audio>
+
+<!-- Sound Effects -->
+<audio id="shootSound" src="./Assets/Audio/Sound Effects/Laser Sound Effects.mp3" type="audio/mp3"></audio>
+<audio id="enemyDiedSound" src="./Assets/Audio/Sound Effects/Explosions.mp3" type="audio/mp3"></audio>
+
+<!-- Player Sprite GIF -->
+<img id="playerSprite" src="./Assets/Images/Space ship.png" alt="Player Sprite" style="display: none;">
+
+    <script src="./Assets/js/galacticBlitz.js"></script>
+</body>
+</html>
